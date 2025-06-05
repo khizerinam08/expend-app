@@ -3,7 +3,7 @@
 'use server'
 
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/db/authOptions";
 import { redirect } from "next/navigation";
 import TransactionForm from "./TransactionForm";
 import clientPromise from "@/db/mongodb";
