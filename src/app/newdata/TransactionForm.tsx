@@ -30,6 +30,12 @@ export default function TransactionForm() {
   };
 
   const addEntry = () => {
+
+    if (transactions.length >= 20) {
+  
+      alert("You can't add more than 20 transactions.");
+      return;
+    }
     setTransactions([...transactions, { amount: "", description: "" }]);
   };
 
